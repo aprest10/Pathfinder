@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pathfinder/static/css/main.90427b22.css",
+    "main.js": "/pathfinder/static/js/main.5306f29d.js",
+    "static/js/787.2036a371.chunk.js": "/pathfinder/static/js/787.2036a371.chunk.js",
+    "static/media/weight-filled-icon.svg": "/pathfinder/static/media/weight-filled-icon.6178a08f177da88dcf6c.svg",
+    "static/media/weight-filled-black-icon.svg": "/pathfinder/static/media/weight-filled-black-icon.d7d476ba6c4d2f032e21.svg",
+    "static/media/weight-filled-icon.png": "/pathfinder/static/media/weight-filled-icon.d46abb2fc5b785661db5.png",
+    "static/media/weight-filled-black-icon.png": "/pathfinder/static/media/weight-filled-black-icon.87277acab80bfd1c2e2b.png",
+    "static/media/end-node.png": "/pathfinder/static/media/end-node.0393c78ebc7a09746860.png",
+    "static/media/end-node.svg": "/pathfinder/static/media/end-node.be8f927ed2164fdd1826.svg",
+    "index.html": "/pathfinder/index.html",
+    "static/media/start-node.svg": "/pathfinder/static/media/start-node.903d2381226fc8f4e3f0.svg",
+    "main.90427b22.css.map": "/pathfinder/static/css/main.90427b22.css.map",
+    "main.5306f29d.js.map": "/pathfinder/static/js/main.5306f29d.js.map",
+    "787.2036a371.chunk.js.map": "/pathfinder/static/js/787.2036a371.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90427b22.css",
+    "static/js/main.5306f29d.js"
+  ]
+}
