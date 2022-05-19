@@ -1,0 +1,183 @@
+:root {
+    --grid: #c7c7c7;
+    --start: #e75151;
+    --end: #5de551;
+    --wall: #c7c7c7;
+    --path1: #45f05c;
+    --path2: #1285f1;
+    --path3: #68a3e6;
+    --path4: #fff200;
+    --visited1: #000042;
+    --visited2: #1168d9;
+    --visited3: #00d99f;
+    --visited4: #00beda;
+
+}
+
+.node {
+    width: 30px;
+    height: 22px;
+
+    border: 1px solid var(--grid);
+}
+
+.node-start {
+    background-color: var(--start);
+    background-image: url(images/start-node.svg);
+    background-position: center;
+    background-size: auto;
+}
+
+.node-finish {
+    background-color: var(--end);
+    background-image: url(images/end-node.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.node-wall {
+    border: 1px solid var(--wall);
+    background-color: var(--wall);
+}
+
+.node-weight {
+    background-image: url(images/weight-filled-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}
+
+.node-visited {
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes visitedAnimation {
+    0% {
+        background-color: var(--visited1);
+    }
+
+    50% {
+        background-color: var(--visited2);
+    }
+
+    75% {
+        background-color: var(--visited3);
+    }
+
+    100% {
+        background-color: var(--visited4);
+    }
+}
+
+.node-visitedWeight {
+    animation-name: visitedWeightAnimation;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes visitedWeightAnimation {
+    0% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-color: var(--visited1);
+    }
+
+    50% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-color: var(--visited2);
+    }
+
+    75% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-color: var(--visited3);
+    }
+
+    100% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 75%;
+        background-color: var(--visited4);
+    }
+}
+
+.node-path {
+    animation-name: shortestPathAnimation;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes shortestPathAnimation {
+    0% {
+        background-color: var(--path1);
+    }
+
+    50% {
+        background-color: var(--path2);
+    }
+
+    75% {
+        background-color: var(--path3);
+    }
+
+    100% {
+        background-color: var(--path4);
+    }
+}
+
+.node-path-weight {
+    animation-name: shortestPathAnimationWeight;
+    animation-duration: 1.5s;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+
+    animation-fill-mode: forwards;
+}
+
+@keyframes shortestPathAnimationWeight {
+    0% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-color: var(--path1);
+    }
+
+    50% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-color: var(--path2);
+    }
+
+    75% {
+        background-image: url(images/weight-filled-icon.svg);
+        background-color: var(--path3);
+    }
+
+    100% {
+        background-image: url(images/weight-filled-black-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 75%;
+        background-color: var(--path4);
+    }
+}

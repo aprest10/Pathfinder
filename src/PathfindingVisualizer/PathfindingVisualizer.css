@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --menu: #404040;
+    --accent: #5bdc7e;
+    --p-text: #fff;
+    --s-text: #121212;
+}
+
+
+.pathfindingVisualizer {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.pathfindingVisualizer .container {
+    min-width: 100%;
+    max-width: 100%;
+
+    color: var(--p-text);
+    background: var(--menu);
+}
+
+.pathfindingVisualizer .container .heading {
+    display: flex;
+
+    padding: 5px 10px 10px 10px;
+
+    text-align: center;
+
+    justify-content: space-between;
+}
+
+.pathfindingVisualizer .container .heading h2 {
+    cursor: pointer;
+}
+
+.textBox {
+    line-height: 20px;
+
+    display: flex;
+    padding: 10px;
+
+    justify-content: space-around;
+}
+
+.textBox .weightContainer input {
+    height: 2em;
+    width: 3em;
+    margin-left: 1em;
+    font-size: 1em;
+
+    text-align: center;
+    border: none;
+    border-bottom: solid 2px white;
+
+    color: var(--p-text);
+    background-color: transparent;
+}
+
+.toggle-text {
+    padding-left: 1em;
+}
+
+.textBox .weightContainer button {
+    font-size: 12px;
+    font-weight: 500;
+
+    position: relative;
+    text-align: center;
+    width: min-content;
+    margin-left: 1em;
+    padding: .5em 1em;
+
+    color: var(--s-text);
+    border: solid 2px var(--accent);
+    border-radius: 1em;
+    background-color: var(--accent);
+}
+
+.textBox .weightContainer button:hover {
+    background-color: transparent;
+    color: var(--p-text);
+}
+
+.textBox .startPointContainer {
+    font-weight: 500;
+}
+
+.textBox .startPointContainer input {
+    height: 2em;
+    width: 3em;
+    margin-left: 1em;
+    font-size: 1em;
+
+    text-align: center;
+    border: none;
+    border-bottom: solid 2px white;
+
+    color: var(--p-text);
+    background-color: transparent;
+}
+
+.textBox .endPointContainer {
+    font-weight: 500;
+}
+
+.textBox .endPointContainer input {
+    height: 2em;
+    width: 3em;
+    margin-left: 1em;
+    font-size: 1em;
+
+    text-align: center;
+    border: none;
+    border-bottom: solid 2px white;
+
+    color: var(--p-text);
+    background-color: transparent;
+}
+
+.container p {
+    padding: 1em 0;
+}
+
+.buttonContainer {
+    font-size: 12px;
+    font-weight: 500;
+
+    position: relative;
+    text-align: center;
+    width: min-content;
+    padding: .5em 1em;
+
+    color: var(--s-text);
+    border: solid 2px var(--accent);
+    border-radius: 1em;
+    background-color: var(--accent);
+}
+
+.buttonContainer:hover {
+    background-color: transparent;
+    color: var(--p-text);
+}
+
+.buttonContainer p {
+    padding: 0;
+}
+
+.legend {
+    display: inline-flex;
+    padding: 1em 0;
+}
+
+.legend-icon {
+    margin: 0 1em;
+    width: 20px;
+}
+
+.visualGridContainer .gridBox {
+    min-width: 80%;
+    max-width: 80%;
+    margin: 2em auto;
+}
+
+@media (max-width: 780px) {
+    .visualGridContainer .gridBox {
+        min-width: 200%;
+        max-width: 200%;
+    }
+
+    .pathfindingVisualizer .container {
+        min-width: 200%;
+        max-width: 200%;
+    }
+
+    .ref::before {
+        font-weight: bold;
+        content: '(Please View in Lanscape Mode) ';
+    }
+}
